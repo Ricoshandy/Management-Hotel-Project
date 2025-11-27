@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Css Custom File Link-->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/responsive-style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/responsive-style.css') }}">
+
 
 
 </head>
