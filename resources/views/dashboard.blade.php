@@ -18,7 +18,7 @@
 
     <!-- Css Custom File Link-->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive-style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/responsive-style.css') }}">
 
 
 </head>
