@@ -538,7 +538,7 @@ section.about-wrapper-fixed {
           </li>
           <li>
             <i class="fa fa-envelope footer-icon-fixed"></i>
-            <span>alfizuhriyah.2022@mhs.unisda.ac.id</span>
+            <span>almeghahhotel@gmail.com</span>
           </li>
         </ul>
       </div>
