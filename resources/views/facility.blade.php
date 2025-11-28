@@ -110,6 +110,21 @@
     </div>
 </div>
 
+
+  <div class="portfolio-item fade-in">
+    <div class="portfolio-image">
+        <img src="{{ asset('Images/Fasilitas hotel/sova.jpg') }}" alt="Premium Bike Rental">
+    </div>
+    <div class="portfolio-content">
+        <h3 class="portfolio-title">Firepit Lounge </h3>
+        <p class="portfolio-description">
+          A circular outdoor seating area featuring a central firepit designed for intimate conversations and nighttime relaxation.
+        </p>
+    </div>
+</div>
+
+
+
 <div class="portfolio-item fade-in">
     <div class="portfolio-image">
         <img src="{{ asset('Images/Fasilitas hotel/Grand Lobby & Reception Lounge.jpg') }}" alt="Jeep Shuttle Station">

@@ -387,11 +387,20 @@ color: var(--text-white);
 
 .team-wrapper {
   padding: 60px 0;
+  position: relative;
+}
+
+.team-wrapper .section-title {
+  position: relative; /* TAMBAH INI */
+  z-index: 10; /* TAMBAH INI biar di atas gambar dekorasi */
+  margin-top: -30px; /* TAMBAH INI biar naik ke atas */
 }
 
 .team-wrapper .section-title h3 {
   font-weight: 700;
   font-size: 32px;
+  margin-top: 0; /* TAMBAH INI */
+  padding-top: 0;
 }
 
 .team-wrapper .card {
@@ -935,4 +944,23 @@ color: var(--text-white);
 
 .about-section-custom .about-image {
     max-width: 450px;
+}
+
+
+.about-image-wrapper {
+    display: block !important;
+    width: 100% !important;
+}
+
+.about-main-image {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+}
+/* Lebih spesifik */
+section#about .about-image-wrapper img.about-main-image {
+    display: block;
+    width: 100%;
+    height: auto;
 }

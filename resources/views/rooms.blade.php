@@ -6,19 +6,20 @@
  <div class="container">
         <h2 class="section-title fade-in text-center" style="font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 45px;"> Al-Meghah Rooms <br>
             (Islamic Luxury Hospitality)</h2>
-        <p class="text-center mb-5" style="max-width: 700px; margin: auto; color: #505050; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <p class="text-center mb-5" style="max-width: 700px; margin: auto; color: #505050; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: medium;">
           We provide a variety of modern amenities to ensure the comfort and best experience for guest.<br> 
-          🌿 Islamic Value Assurance for All Room Types 🌿 <br>
+          <h2 class="section-title fade-in" style="font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 20px; padding-left: 14px;">Islamic Value Assurance for All Room Types</h2>
+  <br>
 
-
-        Every room in Hotel Pillowton is designed with Islamic friendly comfort<br>
-        Qiblah direction sign in every room
-         Prayer mat (sajadah) provided,
-        Adzan prayer time information,
-         No alcohol products or decorations,
-         Respectful and non-intrusive room service,
-         Family friendly environment
-        </p>
+<ul class="portfolio-description">
+  <li>Every room in Hotel Pillowton is designed with Islamic friendly comfort</li>
+    <li> Qiblah direction sign in every room</li>
+      <li> Prayer mat (sajadah) provided</li>
+        <li> No alcohol products or decorations</li>
+          <li> Respectful and non-intrusive room service</li>
+          <li>   Family friendly environment</li>
+</ul>
+ 
 
 
         <div class="portfolio-grid"></div>

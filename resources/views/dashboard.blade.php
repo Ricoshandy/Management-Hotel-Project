@@ -167,7 +167,7 @@
         <div class="islamic-rules-box">
           <h4 class="rules-box-title">Islamic Hospitality Principles</h4>
           
-          <ul class="rules-list-fixed">
+          <ul class="rules-list-fixed"> 
             <li>
               <strong>1. Marriage Verification</strong><br>
               Married couples must present a Marriage Certificate / Buku Nikah.
@@ -720,6 +720,10 @@ footer.footer-wrapper-fixed .container {
 .location-list-fixed li:last-child {
   margin-bottom: 0 !important;
 }
+
+
+
+
 
 .location-arrow-fixed {
   color: #d4a574 !important;

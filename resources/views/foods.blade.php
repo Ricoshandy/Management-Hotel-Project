@@ -7,15 +7,7 @@
 <html lang="en">
 <head>
 
-</head>
 
-    
-</body>
-</html>
-
-    
-
-<body>
 
 <section class="portfolio section" style="padding-top: 120px">
 
@@ -23,7 +15,12 @@
     <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ secure_asset('css/responsive-style.css') }}">
 
-
+  <div class="container">
+        <h2 class="section-title fade-in text-center" style="font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 45px;"> Al-Meghah Foods  <br>
+            (Best Foods Hospitality)</h2>
+        <p class="text-center mb-5" style="max-width: 600px; margin: auto; color: #555;">
+        This is the best type of food available in our hotel which is halal certified and very delicious
+        </p>
 
  <div class="container">
 
@@ -33,7 +30,7 @@
     <div class="row">
       <div class="col-sm-12 section-title text-center mb-5">
        
-        <h3>🥩 Premium Meat Specialties & Signature Indonesian Dishes ⭐</h3>
+        <h3> 🥩 Premium Meat Specialties & Signature Indonesian Dishes ✨</h3>
       </div>
     </div>
     <div class="row">
@@ -106,7 +103,7 @@
           <div class="team-info">
             <h5>Bakso solo</h5>
             <ul class="social-network">
-             <p>Kuah bening kaldu murni, bakso urat/halus premium, kesempurnaan di setiap suapan.</p>
+             <p>Pure clear beef broth, premium meatballs (tendon/smooth), perfection in every slurp.</p>
             </ul>
           </div>
         </div>
@@ -120,7 +117,7 @@
             <h5>Nasi Goreng Jawa</h5>
            
             <ul class="social-network">
-              <p>Nasi digoreng sempurna, smoky khas wajan, bumbu rahasia Jawa yang memikat.</p>
+              <p>Perfectly wok-fried rice, signature smoky aroma, mesmerizing Javanese spice blend.</p>
             </ul>
           </div>
         </div>
@@ -133,7 +130,7 @@
             <h5>Rawon Daging Sapi</h5>
             
             <ul class="social-network">
-              <p>Kaldu Kluwek hitam pekat, daging sapi empuk, warisan rasa otentik Jawa Timur.</p>
+              <p>Deep, earthy black broth, tender slow-cooked beef, the taste of authentic East Java.</p>
             </ul>
           </div>
         </div>
@@ -146,7 +143,7 @@
             <h5>Soto Lamongan</h5>
          
             <ul class="social-network">
-              <p>Kuah kuning kaya rempah, koya gurih melimpah, kehangatan legendaris dari pesisir.</p>
+              <p>Rich yellow herbal broth, savory koya topping, legendary warmth from the coast.</p>
             </ul>
           </div>
         </div>
@@ -163,7 +160,7 @@
     <div class="row">
       <div class="col-sm-12 section-title text-center mb-5">
       
-        <h3>🍰 Luxury Dessert Collectiont & 🌎 International Favorites</h3>
+        <h3>🍰 Luxury Dessert Collectiont &  International Favorites 🌎</h3>
       </div>
     </div>
     <div class="row">

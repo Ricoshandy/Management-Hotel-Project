@@ -1,54 +1,154 @@
 @extends('layouts.app')
 @section('title','Daftar Reservasi')
-
 @section('content')
+
+ <!-- Css Custom File Link-->
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/responsive-style.css') }}">
+
+
 
 <h2 class="text-center res-title mb-4">Daftar Reservasi</h2>
 
 <style>
     .table-wrapper {
-        background: #fff;
-        border-radius: 14px;
-        padding: 25px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    background: #fff;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.reserv-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.reserv-table thead th {
+    background: #f2f2f2;
+    padding: 12px 8px;
+    font-weight: 700;
+    font-size: 13px;
+    border-bottom: 2px solid #ddd;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.reserv-table tbody td {
+    padding: 12px 8px;
+    vertical-align: middle;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+.action-btns {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.payment-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #28a745;
+    color: white;
+    white-space: nowrap;
+}
+
+.payment-btn:hover {
+    background: #218838;
+}
+
+.edit-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #007bff;
+    background: white;
+    color: #007bff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #dc3545;
+    background: white;
+    color: #dc3545;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .table-wrapper {
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0 -5px;
+    }
+
+    .reserv-table {
+        min-width: 750px;
+        font-size: 12px;
     }
 
     .reserv-table thead th {
-        background: #f2f2f2;
-        padding: 14px;
-        font-weight: 700;
-        font-size: 14px;
-        border-bottom: 2px solid #ddd;
+        padding: 10px 6px;
+        font-size: 11px;
     }
 
     .reserv-table tbody td {
-        padding: 14px;
-        vertical-align: middle;
-        font-size: 14px;
-        border-bottom: 1px solid #eee;
+        padding: 10px 6px;
+        font-size: 11px;
     }
 
     .action-btns {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
+        gap: 4px;
     }
 
-    .payment-btn {
-        padding: 6px 12px;
-        font-size: 13px;
-        font-weight: 600;
-        border-radius: 6px;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        background: #28a745;
-        color: white;
+    .payment-btn,
+    .edit-btn,
+    .delete-btn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+    .table-wrapper {
+        padding: 8px;
+        margin: 0 -10px;
     }
 
-    .payment-btn:hover {
-        background: #218838;
+    .reserv-table {
+        min-width: 700px;
     }
+
+    .reserv-table thead th,
+    .reserv-table tbody td {
+        padding: 8px 4px;
+        font-size: 10px;
+    }
+
+    .payment-btn,
+    .edit-btn,
+    .delete-btn {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+}
 
     /* Modal Styles */
     .modal-overlay {
