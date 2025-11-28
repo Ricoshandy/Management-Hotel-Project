@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Website by Alfi Az-Zuhriyah</title>
+    <title>Al-Meghah Hotel</title>
+    
     <!-- Favicon Image-->
-    <link rel="icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="Images/1.png" type="image/x-icon">
 
     <!-- Bootstrap5 Cdn Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,7 +31,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
               <a class="navbar-brand" href="#">
-                <img src="Images/logo.png" class="img-fluid" alt="logo">
+              <img src="Images/2.png" class="img-fluid" alt="logo" style="max-width: 160px; height: auto;">
               </a>
 
 
@@ -40,28 +41,33 @@
               </button>
 
 
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav menu-navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#certivicate">Rooms</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">services</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                  </li>
               
-                  <li class="nav-item mt-3 mt-lg-0">
-                    <a class="main-btn" href="/reservations/create">Book Now</a>
-                  </li>
+
+<li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/rooms">Rooms</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/foods">Food</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="/facility">Facility</a>
+</li>
+
+<li class="nav-item mt-3 mt-lg-0">
+    <a class="main-btn" href="/reservations/create">Book Now</a>
+</li>
+
                  
                 </ul>
               </div>
@@ -78,8 +84,10 @@
         <div class="swiper-slide" style="background-image: url(./Images/blog/background.jpg);">
           <div class="slide-caption text-center">
             <div>
-              <h1> Welcom To Hotel Al-Meghah</h1>
-              <p> — a 16-story Muslim-owned Islamic luxury hotel nestled in the peaceful highlands of Malang.
+              <h1> Welcome To Al-Meghah Hotel </h1>
+              <p> A 16 story Muslim owned Islamic luxury hotel nestled in the peaceful.<br>
+
+                highlands of Malang. Here, every moment of your stay is wrapped in comfort, elegance, and hospitality inspired by Islamic values.
   
               </p>
             </div>
@@ -87,10 +95,10 @@
         
         </div>
 
-        <div class="swiper-slide" style="background-image: url(./Images/slider/slider2.webp);">
+        <div class="swiper-slide" style="background-image: url(./Images/slider/slider2.jpg);">
           <div class="slide-caption text-center">
             <div>
-              <h1> Welcom To Hotel Al-Meghah</h1>
+              <h1> Welcome To Hotel Al-Meghah</h1>
               <p>Here, every moment of your stay is wrapped in comfort, elegance, and hospitality inspired by Islamic values.
               </p>
             </div>
@@ -121,852 +129,370 @@
   </section>
     
 
-<!-- About Section Start-->
-<section id="about" class="about-wrapper">
+<!-- About Section Start -->
+<section id="about" class="about-wrapper-fixed">
   <div class="container">
-    <div class="row flex-lg-row flex-column-reverse">
-      <div class="col-lg-6 text-lg-start-text-center">
-        <h3>Welcome to <span>Hotel <br class="d-lg-block d-none">Al-meghah </span>of your weekend</h3>
-        <p>Here, every moment of your stay is wrapped in comfort, elegance, and hospitality inspired by Islamic values.</p>
-        <p>Hotel Al-Meghah brings together modern luxury and spiritual tranquillity, offering breathtaking mountain views and a full range of world-class facilities — including:</p>
-        <a href="#rooms" class="main-btn mt-4">Explore</a>
+    
+    <!-- SECTION 1: Main About -->
+    <div class="row about-row-fixed align-items-center mb-5">
+      <!-- TEXT AREA -->
+      <div class="col-lg-6 about-text-col">
+        <h2 class="about-main-title">About Us</h2>
+        <h3 class="about-subtitle">
+          Welcome to <span class="highlight-text">Hotel Al-Meghah</span><br>
+          Your Peace Above the Clouds
+        </h3>
+        <p class="about-description">
+          At AL-MEGHAH HOTEL, every detail is crafted to bring modesty, serenity,
+          and halal comfort into a luxurious mountain-view experience.
+        </p>
       </div>
-      <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
-        <img src="{{ asset('Images/about-img.svg') }}" class="img-fluid" alt="about">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Rooms Section-->
-
-<!-- DULUXE ROOMS Section -->
-    <section id="certivicate" class="portfolio section">
-        <div class="container">
-            <h2 class="section-title fade-in">💎 Luxury Suite </h2>
-
-  <!-- Portfolio Grid -->
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in" data-category="web">
-                    <div class="portfolio-image">
-                         <img src="{{ asset('Images/Kamar hotel tingkat 1/IMG-20251122-WA0095.jpg') }}"  alt="E-commerce Platform">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View E-commerce Platform project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Facilities include</h3>
-                        <p class="portfolio-description" style="padding-top: 10px;">•	King bed with hotel-grade comfort
-                  <p class="portfolio-description">•	Private mountain-view balcony
-                   <p class="portfolio-description">•	50” TV & full-body smart mirror
-                   <p class="portfolio-description">•	Mini library & sofa lounge
-                     <p class="portfolio-description">•	Coffee & tea set & AC
-                  </p>
-                        
-                    </div>
-                </div>
-
-                <div class="portfolio-item fade-in" data-category="mobile">
-                    <div class="portfolio-image">
-                       <img src="{{ asset('Images/Kamar hotel tingkat 1/IMG-20251122-WA0097.jpg') }}" alt="Fitness Mobile App">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View Fitness Mobile App project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Bathroom </h3>
-                        <p class="portfolio-description">•	Bathtub + shower
-<p class="portfolio-description">•	Premium and alcohol-free toiletries
-</p>
-                       
-                    </div>
-                </div>
-
-                <div class="portfolio-item fade-in" data-category="branding">
-                    <div class="portfolio-image">
-                        <img src="{{ asset('Images/Fasilitas hotel/360° Outdoor Café.jpg') }}"alt="Brand Identity Design">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View Brand Identity Design project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Food & Beverage </h3>
-                        <p class="portfolio-description">•	Premium halal buffet breakfast
-<p class="portfolio-description">•	2 bottles of mineral water per day
-<p class="portfolio-description">•	Welcome light snack & evening snack
-
-.</p>
-
-    </section>
-
- <!-- DULUXE ROOMS Section -->
-    <section id="certivicate" class="portfolio section">
-        <div class="container">
-            <h2 class="section-title fade-in">🌄 Deluxe Room </h2>
-
-  <!-- Portfolio Grid -->
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in" data-category="web">
-                    <div class="portfolio-image">
-                      <img src="{{ asset('Images/Kamar hotel tingkat 2/IMG-20251122-WA0093.jpg') }}"  alt="E-commerce Platform">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View E-commerce Platform project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Facilities include</h3>
-      
-                <p class="portfolio-description"> •	Private mountain-view balcony</p> 
-                 <p class="portfolio-description"> •	50” TV & full-body smart mirror</p> 
-                <p class="portfolio-description">•	Mini library & sofa lounge</p> 
-              <p class="portfolio-description">•	Coffee & tea set & AC</p> 
-
-                        
-                    </div>
-                </div>
-
-                <div class="portfolio-item fade-in" data-category="mobile">
-                    <div class="portfolio-image">
-                     <img src="{{ asset('Images/Kamar hotel tingkat 2/IMG-20251122-WA0096.jpg') }}"  alt="Fitness Mobile App">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View Fitness Mobile App project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Bathroom </h3>
-                        <p class="portfolio-description" style="padding-top: 10px;">•	Bathtub + shower 
-                  <p class="portfolio-description">•	Premium halal and free alcohol
-
-                       
-                    </div>
-                </div>
-
-                <div class="portfolio-item fade-in" data-category="branding">
-                    <div class="portfolio-image">
-                         <img src="{{ asset('Images/Fasilitas hotel/Multi function hall.jpg') }}" alt="Brand Identity Design">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View Brand Identity Design project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Food & Beverage </h3>
-                        <p class="portfolio-description">•	Premium halal buffet breakfast
-<p class="portfolio-description">•	2 bottles of mineral water per day
-<p class="portfolio-description">•	Welcome light snack & evening snack
-
-.</p>
-
-    </section>
-
-     <!-- STANDARD ROOMS Section -->
-    <section id="certivicate" class="portfolio section">
-        <div class="container">
-            <h2 class="section-title fade-in">🌿 Standard Room </h2>
-
-  <!-- Portfolio Grid -->
-            <div class="portfolio-grid">
-                <div class="portfolio-item fade-in" data-category="web">
-                    <div class="portfolio-image">
-                      <img src="{{ asset('Images/Kamar hotel tingkat 3/IMG-20251122-WA0092.jpg') }}"  alt="E-commerce Platform">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View E-commerce Platform project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Facilities include</h3>
-                        <p class="portfolio-description">•	King bed with hotel-grade comfort
-               <p class="portfolio-description"> •	Private mountain-view balcony
- <p class="portfolio-description"> •	50” TV & full-body smart mirror
-<p class="portfolio-description">•	Mini library & sofa lounge
-<p class="portfolio-description">•	Coffee & tea set & AC
-</p>
-                        
-                    </div>
-                </div>
-
-                <div class="portfolio-item fade-in" data-category="mobile">
-                    <div class="portfolio-image">
-                       <img src="{{ asset('Images/Kamar hotel tingkat 3/IMG-20251122-WA0094.jpg') }}"  alt="Fitness Mobile App">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link" aria-label="View Fitness Mobile App project"></a>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Bathroom </h3>
-                        <p class="portfolio-description">•	Bathtub + shower
-<p class="portfolio-description">•	Premium  and free alcohol-free toiletries
-</p>
-                       
-                    </div>
-                </div>
-
-
-.</p>
-
-
-    </section>
-
-<!-- Service Section -->
-<section  id="services" class="services_wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-        <h6>We Are Here For You</h6>
-        <h3>Our Awsome Services</h3>
-      </div>
-    </div>
-    <div class="row align-items-center service-item-wrap">
-      <div class="col-lg-7 p-lg-0">
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="spa" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-            <img src="Images/services/service1.webp">
-          </div>
-          <div class="tab-pane fade" id="restaurent" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-            <img src="Images/services/service2.webp">
-          </div>
-          <div class="tab-pane fade" id="swimming" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-            <img src="Images/services/service3.webp">
-          </div>
-          <div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-            <img src="Images/services/service6.webp">
-          </div>
+      <!-- IMAGE -->
+      <div class="col-lg-6 about-image-col">
+        <div class="about-image-wrapper">
+          <img src="{{ asset('Images/about-img.svg') }}" class="about-main-image" alt="about">
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-5 position-relative">
-        <div class="service-menu-area">
-          <ul class="nav">
+    <!-- SECTION 2: Islamic Rules (Image Left) -->
+    <div class="row about-row-fixed align-items-center mb-5 flex-lg-row-reverse">
+      <!-- TEXT AREA -->
+      <div class="col-lg-6 about-text-col">
+        <div class="islamic-rules-box">
+          <h4 class="rules-box-title">Islamic Hospitality Principles</h4>
+          
+          <ul class="rules-list-fixed">
             <li>
-              <a data-bs-toggle="tab" href="#spa" class="active" >
-                <span class="service-icon">
-                  <img src="Images/services/service-icon1.webp" alt="">
-                </span>
-                <h5>Spa, beauty & Health</h5>
-                <P><span> Spa and beauty</span>Dull skin? Say no to it! Get the glowing skin of your dreams with our premium facial. ✨"</P>
-              </a>
+              <strong>1. Marriage Verification</strong><br>
+              Married couples must present a Marriage Certificate / Buku Nikah.
             </li>
             <li>
-              <a data-bs-toggle="tab" href="#restaurent">
-                <span class="service-icon">
-                  <img src="Images/services/service-icon2.webp" alt="">
-                </span>
-                <h5>Restaurant</h5>
-                <P><span> Spa and beauty</span>A versatile hall equipped with LED stage, premium acoustics, chandeliers, and banquet or classroom. </P>
-              </a>
-            </li>
-
-            <li>
-              <a data-bs-toggle="tab" href="#swimming">
-                <span class="service-icon">
-                  <img src="Images/services/service-icon3.webp" alt="">
-                </span>
-                <h5>Swimming Pool</h5>
-                <P><span> Spa and beauty</span>infinity pool featuring panoramic mountain scenery, wooden deck seating.</P>
-              </a>
+              <strong>2. No Alcohol, Drugs, Gambling, or Immoral Acts</strong>
             </li>
             <li>
-              <a data-bs-toggle="tab" href="#conference">
-                <span class="service-icon">
-                  <img src="Images/services/service-icon4.webp" alt="">
-                </span>
-                <h5>conference Hall</h5>
-                <P><span> Spa and beauty</span>Make your event a success at the Conference Hall. Professional Venue, State-of-the-Art Facilities.</P>
-              </a>
+              <strong>3. Separate Men & Women Facilities</strong><br>
+              Pool hours, Spa, and Fitness Zones.
             </li>
-           
+            <li>
+              <strong>4. Adzan Break</strong><br>
+              Activities pause during Adzan.
+            </li>
+            <li>
+              <strong>5. Modest Dress Code</strong>
+            </li>
           </ul>
+
+          <p class="rules-footer-text">
+            These principles ensure barakah, safety, and comfort for all guests.
+          </p>
         </div>
       </div>
+
+      <!-- IMAGE -->
+      <div class="col-lg-6 about-image-col">
+        <div class="about-image-wrapper">
+          <img src="{{ asset('Images/blog/background.jpg') }}" class="about-main-image" alt="Islamic Hospitality1">
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Discounts Kiri, Promise Kanan -->
+<div class="row about-row-fixed align-items-center mb-5">
+  <!-- SPECIAL DISCOUNTS KIRI -->
+  <div class="col-lg-6 about-text-col">
+    <div class="islamic-rules-box">
+      <h5 class="rules-box-title">🌙 SPECIAL DISCOUNTS 🌙</h5>
+      
+      <p class="discount-item">1. Memorized the Qur'an (30 Juz)? Show your certificate and enjoy free stay in any of our 3 room tiers.</p>
+      
+      <p class="discount-item">2. Newlyweds can enjoy a free stay in our Standard Room.</p>
+      
+      <p class="discount-item">3. Friday Blessings Discount: Get 25% off on any stay, once every month.</p>
     </div>
   </div>
 
-  <!-- Counter-->
-  <div class="counter mt-5">
-    <div class="container">
-      <div class="row  text-center">
-        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-          <h1>
-            <span id="count1">0</span>+
-          </h1>
-          <p>Happy Clients</p>
-        </div>
-        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-          <h1>
-            <span id="count2">0</span>+
-          </h1>
-          <p>New Friendship</p>
-        </div>
-
-        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-          <h1>
-            <span id="count3">0</span>+
-          </h1>
-          <p>Five Start Ratings</p>
-        </div>
-
-        <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
-          <h1>
-            <span id="count4">0</span>+
-          </h1>
-          <p>Served Breakfast</p>
-        </div>
-
-      </div>
+  <!-- PROMISE BOX KANAN -->
+  <div class="col-lg-6 about-text-col">
+    <div class="promise-box-fixed">
+      <h4 class="promise-title">Our Promise</h4>
+      <p class="promise-text">
+        Whether for a honeymoon, vacation, or business trip,  
+        Hotel Al-Meghah offers Islamic luxury with sincerity and peace.
+      </p>
+      <a href="/rooms" class="explore-btn-fixed">Explore </a>
     </div>
   </div>
-</section>
-<!-- Service Section Exit -->
-
-
-<!-- FOOD PREMIUM Start -->
-<section id=" team" class="team-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-        <h6>What I can do for you</h6>
-        <h3>🥩 Premium Meat Specialties & Signature Indonesian Dishes ⭐</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-           <img src="{{ asset('Images/food/Beef Teriyaki with Rice.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Beef Teriyaki with Rice</h5>
-        
-            <ul class="social-network">
-             <p>Melt-in-your-mouth beef slices, slow-cooked in a sweet-savory Japanese Teriyaki sauce.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/food/Ayam Bakar Madu .jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Honey Grilled Chicken</h5>
-           
-            <ul class="social-network">
-              <p>Succulent chicken, smoked and glazed with pure honey for a sweet, caramelized finish.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/food/Daging Sapi Lada Hitam.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Black Pepper Beef</h5>
-           
-            <ul class="social-network">
-              <p>Quick-seared beef, enveloped in a bold and elegant black pepper sauce.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-           <img src="{{ asset('Images/food/Lamb Chop (Iga Kambing).jpg') }}" class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Grilled Lamb Ribs</h5>
-           
-            <ul class="social-network">
-              <p>Perfectly marinated lamb ribs, juicy, odor-free, with rich, smoky grill aromas.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-       
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-        <img src="{{ asset('Images/indonesia/Bakso solo.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Bakso solo</h5>
-            <ul class="social-network">
-             <p>Kuah bening kaldu murni, bakso urat/halus premium, kesempurnaan di setiap suapan.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/indonesia/Nasi Goreng Jawa.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Nasi Goreng Jawa</h5>
-           
-            <ul class="social-network">
-              <p>Nasi digoreng sempurna, smoky khas wajan, bumbu rahasia Jawa yang memikat.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
- <img src="{{ asset('Images/indonesia/Rawon Daging Sapi.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Rawon Daging Sapi</h5>
-            
-            <ul class="social-network">
-              <p>Kaldu Kluwek hitam pekat, daging sapi empuk, warisan rasa otentik Jawa Timur.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/indonesia/Soto Lamongan.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Soto Lamongan</h5>
-         
-            <ul class="social-network">
-              <p>Kuah kuning kaya rempah, koya gurih melimpah, kehangatan legendaris dari pesisir.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-</section>
-
-
-
-
-
-</section>
-
-
-
-
-
-
-<section id=" team" class="team-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-        <h6>What I can do for you</h6>
-        <h3>🍰 Luxury Dessert Collectiont & 🌎 International Favorites</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-        <img src="{{ asset('Images/cake/Chocolate Lava Cake.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Chocolate Lava Cake</h5>
-            <ul class="social-network">
-               <p>Warm chocolate cake, featuring an irresistible core of premium gooey melted chocolate.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/cake/Fruit Pancake Tower with Maple Syrup.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Fruit Pancake Tower</h5>
-           
-            <ul class="social-network">
-              <p>Fluffy layered pancakes, topped with fresh fruit and drizzled with authentic Maple Syrup.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
- <img src="{{ asset('Images/cake/Mango Cheesecake Slice.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Mango Cheesecake Slice</h5>
-            <ul class="social-network">
-              <p>Creamy cheesecake with a tart-sweet mango topping, balanced and fresh.</p>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/cake/Premium Vanilla Panna Cotta.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Premium Vanilla Panna Cotta</h5>
-         
-            <ul class="social-network">
-              <p>Silky smooth texture, pure vanilla essence, an elegant Italian delight.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-       
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-        <img src="{{ asset('Images/international/Chicken Cordon Bleu.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Chicken Cordon Bleu</h5>
-            <ul class="social-network">
-             <p>Crispy breaded chicken, filled with smoked beef and melted cheese, luxurious European classic.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/international/Spaghetti Bolognese.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Spaghetti Bolognese</h5>
-           
-            <ul class="social-network">
-              <p>Al dente pasta, authentic tomato-meat sauce, rich and true Italian tradition.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
- <img src="{{ asset('Images/international/Fish & Chips.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Fish & Chips</h5>
-            
-            <ul class="social-network">
-              <p>olden crispy Dory fillet, classic tartar sauce, essential British comfort food.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/international/Mushroom soup.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Creamy Mushroom Soup</h5>
-         
-            <ul class="social-network">
-              <p>Rich velvety mushroom soup, pure champignon essence, served with warm Garlic Bread.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
   </div>
 
 </section>
 
+<style>
+/* CRITICAL: Override Bootstrap with high specificity */
+section.about-wrapper-fixed {
+  padding: 80px 0 !important;
+  background: #ffffff !important;
+  margin: 0 !important;
+}
 
+.about-wrapper-fixed .container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
 
+/* Row spacing */
+.about-wrapper-fixed .about-row-fixed {
+  margin-bottom: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+}
 
-<section id=" team" class="team-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-        <h3>🍹Fresh Juice Collection & Premium Tea Selection 🍵</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-        <img src="{{ asset('Images/drinks/Avocado Juice.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Avocado Juice</h5>
-            <ul class="social-network">
-             <p>Thick and creamy fresh avocado, a luxurious texture with a hint of chocolate.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+.about-wrapper-fixed .about-row-fixed:last-child {
+  margin-bottom: 0 !important;
+}
 
+/* Text Column */
+.about-wrapper-fixed .about-text-col {
+  padding: 0 30px !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/drinks/Mango Juice.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Mango Juice</h5>
-           
-            <ul class="social-network">
-              <p>Pure, ripe mango pulp, naturally sweet, thick, and utterly refreshing.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+.about-wrapper-fixed .about-image-col {
+  padding: 0 30px !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
- <img src="{{ asset('Images/drinks/Melon Juice__.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Melon Juice</h5>
-            
-            <ul class="social-network">
-              <p>Sweet and chilled fresh melon, the perfect natural thirst quencher.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+/* Main Title */
+.about-wrapper-fixed .about-main-title {
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  color: #1a1a1a !important;
+  margin-bottom: 20px !important;
+  line-height: 1.2 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/drinks/Red Guava Juice.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Red Guava Juice</h5>
-         
-            <ul class="social-network">
-              <p>Vitamin-rich red guava, freshly blended, a perfect sweet-sour balance.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+/* Subtitle */
+.about-wrapper-fixed .about-subtitle {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  margin-bottom: 25px !important;
+  line-height: 1.4 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
+.about-wrapper-fixed .highlight-text {
+  color: #d4a574 !important;
+  font-weight: 700 !important;
+}
 
+/* Description */
+.about-wrapper-fixed .about-description {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: #4a5568 !important;
+  margin-bottom: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
+/* Image Wrapper */
+.about-wrapper-fixed .about-image-wrapper {
+  width: 100% !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
+}
 
-  
+.about-wrapper-fixed .about-main-image {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: cover !important;
+}
 
-   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-       
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-        <img src="{{ asset('Images/tea/Hot tea.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Hot Tea / Iced Sweet Tea</h5>
-            <ul class="social-network">
-             <p>Finest selected tea leaves, calming aroma, the best of simplicity.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+/* Islamic Rules Box */
+.about-wrapper-fixed .islamic-rules-box {
+  background: #f7f4ee !important;
+  border-left: 6px solid #d4a574 !important;
+  padding: 35px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
 
+.about-wrapper-fixed .rules-box-title {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  color: #2c3e50 !important;
+  margin-bottom: 25px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/tea/Iced lemon tea.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Lemon Tea (Hot / Iced)</h5>
-           
-            <ul class="social-network">
-              <p>Authentic tea with a zesty squeeze of fresh lemon, refreshingly healthy.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+.about-wrapper-fixed .rules-list-fixed {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 20px 0 !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
- <img src="{{ asset('Images/tea/Jasmine Tea.jpg') }}"  class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Jasmine Tea</h5>
-            
-            <ul class="social-network">
-              <p>Light and elegant green tea, infused with the fragrant aroma of jasmin</p>
-            </ul>
-          </div>
-        </div>
-      </div>
+.about-wrapper-fixed .rules-list-fixed li {
+  margin-bottom: 18px !important;
+  color: #333333 !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card p-0 rounded-3">
-          <img src="{{ asset('Images/tea/Lychee Tea.jpg') }}"class="img-fluid rounded-3">
-          <div class="team-info">
-            <h5>Lychee Tea</h5>
-         
-            <ul class="social-network">
-              <p>Light and elegant green tea, infused with the fragrant aroma of jasmine.</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+.about-wrapper-fixed .rules-list-fixed li:last-child {
+  margin-bottom: 0 !important;
+}
 
+.about-wrapper-fixed .rules-list-fixed strong {
+  color: #d4a574 !important;
+  font-weight: 600 !important;
+}
 
-</section>
+.about-wrapper-fixed .rules-footer-text {
+  font-size: 15px !important;
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  font-style: italic !important;
+  color: #666666 !important;
+  line-height: 1.6 !important;
+}
 
+/* Promise Box */
+.about-wrapper-fixed .promise-box-fixed {
+  background: #2c3e50 !important;
+  padding: 40px !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
 
+.about-wrapper-fixed .promise-title {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #d4a574 !important;
+  margin-bottom: 20px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
+.about-wrapper-fixed .promise-text {
+  font-size: 17px !important;
+  line-height: 1.8 !important;
+  color: #ffffff !important;
+  margin-bottom: 30px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
+/* Explore Button */
+.about-wrapper-fixed .explore-btn-fixed {
+  display: inline-block !important;
+  padding: 14px 32px !important;
+  background: #d4a574 !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid #d4a574 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
+.about-wrapper-fixed .explore-btn-fixed:hover {
+  background: transparent !important;
+  color: #d4a574 !important;
+  border-color: #d4a574 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3) !important;
+}
 
+/* Responsive Design */
+@media (max-width: 991px) {
+  section.about-wrapper-fixed {
+    padding: 60px 0 !important;
+  }
 
+  .about-wrapper-fixed .about-row-fixed {
+    margin-bottom: 60px !important;
+  }
 
+  .about-wrapper-fixed .about-text-col,
+  .about-wrapper-fixed .about-image-col {
+    padding: 0 15px !important;
+    margin-bottom: 30px !important;
+  }
 
+  .about-wrapper-fixed .about-image-col {
+    margin-bottom: 0 !important;
+  }
 
+  .about-wrapper-fixed .about-main-title {
+    font-size: 36px !important;
+    text-align: center !important;
+  }
 
-<!-- Team Section Exit-->
+  .about-wrapper-fixed .about-subtitle {
+    font-size: 26px !important;
+    text-align: center !important;
+  }
 
-<!-- Gallery Section -->
-<section id="gallery" class="gallery_wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 section-title text-center mb-5">
-        <h6>Best Picture Of Our Hotel</h6>
-        <h3>Our Gallery</h3>
+  .about-wrapper-fixed .about-description {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+}
+/* Discount Item Styling */
+.about-wrapper-fixed .discount-item {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #333333 !important;
+  margin-bottom: 20px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
 
-      </div>
-    </div>
-    <div class="row g-0">
-      <div class="col-lg-3 col-md-6 gallery-item ">
-        <img src="./Images/gallery/1.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-      <div class="col-lg-3 col-md-6 gallery-item ">
-        <img src="./Images/gallery/2.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-      <div class="col-lg-3 col-md-6 gallery-item ">
-        <img src="./Images/gallery/3.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-      <div class="col-lg-3 col-md-6 gallery-item ">
-        <img src="./Images/gallery/4.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-      <div class=" col-md-6 gallery-item ">
-        <img src="./Images/gallery/5.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-      <div class=" col-md-6 gallery-item ">
-        <img src="./Images/gallery/6.webp" class="img-fluid w-100" >
-        <div class="gallery-item-content"></div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Gallery Section Exit-->
+.about-wrapper-fixed .discount-item:last-child {
+  margin-bottom: 0 !important;
+}
 
-<!-- Pricing Card-->
-<section id="price" class="price_wrapper">
-  <div class="container">
-    <div class="row" >
-      <div class="col-sm-12 section-title text-center mb-5" > 
-        <h6>price</h6>
-        <h3> Best & Affordable Price for you</h3>
-      </div>
+@media (max-width: 767px) {
+  section.about-wrapper-fixed {
+    padding: 40px 0 !important;
+  }
 
-  <div class="row">
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card p-4 text-center rounded-3">
-        <h5 class="text-decoration-underline mb-4"> Economic</h5>
-        <ul class="list-unstyled">
-          <li>
-            <p>Flight Ticket(2)</p>
-          </li>
-          <li>
-            <p>Music Concert (30% off)</p>
-          </li>
-          <li>
-            <p>Flight Ticket (2)</p>
-          </li>
-          <li>
-            <p>Restaurant (snacks)</p>
-          </li>
-          <li>
-            <p>Face Make (No)</p>
-          </li>
-        </ul>
-        <hr/>
-        <h3>$350<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
-        <a href="/reservations/create" class="main-btn">Book Now</a>
-      </div>
-    </div>
+  .about-wrapper-fixed .about-row-fixed {
+    margin-bottom: 40px !important;
+  }
 
+  .about-wrapper-fixed .about-main-title {
+    font-size: 32px !important;
+  }
 
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card p-4 text-center rounded-3">
-        <h5 class="text-decoration-underline mb-4"> Regular</h5>
-        <ul class="list-unstyled">
-          <li>
-            <p>Flight Ticket(2)</p>
-          </li>
-          <li>
-            <p>Music Concert (30% off)</p>
-          </li>
-          <li>
-            <p>Flight Ticket (2)</p>
-          </li>
-          <li>
-            <p>Restaurant (snacks)</p>
-          </li>
-          <li>
-            <p>Face Make (No)</p>
-          </li>
-        </ul>
-        <hr/>
-        <h3>$550<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
-       <a href="/reservations/create" class="main-btn">Book Now</a>
-      </div>
-    </div>
+  .about-wrapper-fixed .about-subtitle {
+    font-size: 22px !important;
+  }
 
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="card p-4 text-center rounded-3">
-        <h5 class="text-decoration-underline mb-4"> VIP</h5>
-        <ul class="list-unstyled">
-          <li>
-            <p>Flight Ticket(2)</p>
-          </li>
-          <li>
-            <p>Music Concert (30% off)</p>
-          </li>
-          <li>
-            <p>Flight Ticket (2)</p>
-          </li>
-          <li>
-            <p>Restaurant (snacks)</p>
-          </li>
-          <li>
-            <p>Face Make (No)</p>
-          </li>
-        </ul>
-        <hr/>
-        <h3>$1000<sub class="fs-6 fw-normal">/NIGHT</sub></h3>
-       <a href="/reservations/create" class="main-btn">Book Now</a>
-      </div>
-    </div>
+  .about-wrapper-fixed .about-description {
+    font-size: 15px !important;
+  }
 
+  .about-wrapper-fixed .islamic-rules-box,
+  .about-wrapper-fixed .promise-box-fixed {
+    padding: 25px !important;
+  }
 
-   
-  </div>
-    </div>
-  </div>
-</section>
-<!-- Pricing Card Section Exit -->
+  .about-wrapper-fixed .rules-box-title,
+  .about-wrapper-fixed .promise-title {
+    font-size: 20px !important;
+  }
+
+  .about-wrapper-fixed .explore-btn-fixed {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+</style>
 
 <!--Blog Section Start-->
 <section id="blog" class="blog_wrapper pb-0">
@@ -987,97 +513,400 @@
 
 <!--Blog Section Exit-->
 
-<!-- Footer Section-->
-<section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
-  <div class="container pb-3">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <h5>hotel location</h5>
-        <p class="ps-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quaerat!</p>
-        <div class="contact-info">
-          <ul class="list-unstyled">
-            <li><a href="#"><i class="fa fa-home me-3"></i> Hotel Al-Meghah
-Jl. Panorama Gunung No. 16,
-Kawasan Wisata Alam Pegunungan Malang (Hampir ke arah Kota Batu)
-Kec. Junrejo / Kec. Pujon, Kota Malang, Jawa Timur
-Indonesia
-</a></li>
-            <li><a href="#"><i class="fa fa-phone me-3"></i> 0857-4838-4770
-</a></li>
-            <li><a href="#"><i class="fa fa-envelope me-3"></i>alfizuhriyah.2022@mhs.unisda.ac.id</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-      <div class="col-lg-3 col-md-6">
-        <h5>More Links</h5>
-        
-     
-          <ul class="link-widget p-0">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#"> Our office</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Our Store</a></li>
-            <li><a href="#">Guarantee</a></li>
-            <li><a href="#">Buy Gift Card</a></li>
-            <li><a href="#">Return Policy</a></li>
-          </ul>
-        
-      </div>
-
+<<!-- Footer Section-->
+<footer id="contact" class="footer-wrapper-fixed">
+  <div class="container">
+    <div class="row footer-row-fixed">
       
-      <div class="col-lg-3 col-md-6">
-        <h5>More Links</h5>
+      <!-- COLUMN 1: Hotel Info -->
+      <div class="col-lg-3 col-md-6 footer-col-fixed mb-4 mb-lg-0">
+        <h5 class="footer-title-fixed">Hotel Al-Meghah</h5>
+        <p class="footer-desc-fixed">Islamic Luxury Hotel with Mountain View Experience</p>
         
-     
-          <ul class="link-widget p-0">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#"> Our office</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Our Store</a></li>
-            <li><a href="#">Guarantee</a></li>
-            <li><a href="#">Buy Gift Card</a></li>
-            <li><a href="#">Return Policy</a></li>
-          </ul>
-        
+        <ul class="contact-list-fixed">
+          <li>
+            <i class="fa fa-map-marker-alt footer-icon-fixed"></i>
+            <span>Jl. Panglima Sudirman No. 17, Batu City Square, Malang – East Java 65311, Indonesia</span>
+          </li>
+          <li>
+            <i class="fa fa-phone footer-icon-fixed"></i>
+            <span>+62 857-4838-4770</span>
+          </li>
+          <li>
+            <i class="fa fa-envelope footer-icon-fixed"></i>
+            <span>alfizuhriyah.2022@mhs.unisda.ac.id</span>
+          </li>
+        </ul>
       </div>
 
-      
-      <div class="col-lg-3 col-md-6">
-        <h5>Newsletter</h5>
-        <div class="form-group mb-4">
-          <input type="email" class="form-control bg-transparent" placeholder="enter your email">
-          <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">
-            Subscribe
-          </button>
-        </div>
-        <h5>Stay Connected</h5>
-          <ul class="social-network d-flex align-items-center p-0">
-            <li><a href="#"> <i class=" fab fa-facebook-f"></i></a></li>
-            <li><a href="#"> <i class=" fab fa-twitter"></i></a></li>
-            <li><a href="#"> <i class=" fab fa-google-plus-g"></i></a></li>
-            <li><a href="#"> <i class=" fab fa-vimeo-v"></i></a></li>
-          </ul>
+      <!-- COLUMN 2: Key Locations -->
+      <div class="col-lg-3 col-md-6 footer-col-fixed mb-4 mb-lg-0">
+        <h5 class="footer-title-fixed">📍 Key Locations</h5>
         
+        <ul class="location-list-fixed">
+          <li>
+            <i class="fa fa-chevron-right location-arrow-fixed"></i>
+            <span>minutes from Batu City Square<small>(~3 minutes)</small></span>
+          </li>
+          <li>
+            <i class="fa fa-chevron-right location-arrow-fixed"></i>
+            <span>from Museum Angkut<small>(~8 minutes)</small></span>
+          </li>
+          <li>
+            <i class="fa fa-chevron-right location-arrow-fixed"></i>
+            <span>from Jatim Park 1<small>(~12 minutes)</small></span>
+          </li>
+          <li>
+            <i class="fa fa-chevron-right location-arrow-fixed"></i>
+            <span>minutes from Selecta Mountain Resort<small>(~15 minutes)</small></span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3: Quick Links & Social Media -->
+      <div class="col-lg-3 col-md-6 footer-col-fixed mb-4 mb-lg-0">
+
+        <h5 class="footer-title-fixed">Notes</h5>
+         
+        <ul class="quick-links-fixed">
+          <li><a href="">Located in the heart of Batu’s tourist district, right next to Batu City Square, Al-MEGHAH Islamic Luxury Hotel offers a refreshing mountain atmosphere, cool air, and easy access to the most famous family attractions in Malang.</a></li>
+        
+        </ul>
+
+        <h5 class="footer-title-fixed mt-4">Stay Connected</h5>
+        <ul class="social-links-fixed">
+         
+          <li>
+            <a href="https://www.instagram.com/almeghahhotel" target="_blank" class="social-link-fixed instagram-fixed">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:alfizuhriyah.2022@mhs.unisda.ac.id" class="social-link-fixed email-fixed">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 4: Google Maps -->
+      <div class="col-lg-3 col-md-6 footer-col-fixed mb-4 mb-lg-0">
+        <h5 class="footer-title-fixed">Find Us</h5>
+        
+        <div class="map-wrapper-fixed">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.5747193!2d112.5208214!3d-7.8759565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInMzMuNCJTIDExMsKwMzEnMTUuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
+            class="google-map-fixed"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <a href="https://www.google.com/maps/search/Al-MEGHAH+Islamic+Luxury+Hotel+Jl.+Panglima+Sudirman+No.+17,+Batu+City+Square" 
+           target="_blank" 
+           class="map-link-fixed">
+          <i class="fa fa-map-marked-alt"></i> View on Google Maps
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="copyright-bar-fixed">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="copyright-text-fixed">
+            © 2024 Hotel Al-Meghah. All Rights Reserved. | Islamic Luxury with Sincerity and Peace
+          </p>
+        </div>
       </div>
     </div>
-
   </div>
+</footer>
 
-  <div class="container-fluid copyright-section">
-    <p>Copyright  &#169  <a href="#">  Nimra</a > All Rights Reserved</p>
-  </div>
+<style>
+/* FOOTER MAIN WRAPPER */
+footer.footer-wrapper-fixed {
+  background: #2c3e50 !important;
+  padding: 60px 0 0 !important;
+  color: #ecf0f1 !important;
+  margin-top: 0 !important;
+}
+
+footer.footer-wrapper-fixed .container {
+  max-width: 1200px !important;
+}
+
+/* ROW */
+.footer-row-fixed {
+  margin: 0 -15px !important;
+}
+
+/* COLUMNS */
+.footer-col-fixed {
+  padding: 0 15px !important;
+}
+
+/* TITLES */
+.footer-title-fixed {
+  color: #d4a574 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* DESCRIPTION */
+.footer-desc-fixed {
+  color: #bdc3c7 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
+}
+
+/* CONTACT LIST */
+.contact-list-fixed {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.contact-list-fixed li {
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 15px !important;
+  color: #ecf0f1 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+
+.contact-list-fixed li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.footer-icon-fixed {
+  color: #d4a574 !important;
+  width: 20px !important;
+  margin-right: 10px !important;
+  margin-top: 2px !important;
+  flex-shrink: 0 !important;
+}
+
+/* KEY LOCATIONS LIST */
+.location-list-fixed {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.location-list-fixed li {
+  display: flex !important;
+  align-items: flex-start !important;
+  margin-bottom: 12px !important;
+  color: #ecf0f1 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+.location-list-fixed li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.location-arrow-fixed {
+  color: #d4a574 !important;
+  font-size: 10px !important;
+  margin-right: 10px !important;
+  margin-top: 4px !important;
+  flex-shrink: 0 !important;
+}
+
+.location-list-fixed small {
+  color: #95a5a6 !important;
+  font-size: 12px !important;
+}
+
+/* QUICK LINKS */
+.quick-links-fixed {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.quick-links-fixed li {
+  margin-bottom: 10px !important;
+}
+
+.quick-links-fixed li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.quick-links-fixed a {
+  color: #ecf0f1 !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+.quick-links-fixed a:hover {
+  color: #d4a574 !important;
+  padding-left: 5px !important;
+}
+
+/* SOCIAL LINKS */
+.social-links-fixed {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  gap: 12px !important;
+}
+
+.social-link-fixed {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ecf0f1 !important;
+  font-size: 18px !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.social-link-fixed:hover {
+  transform: translateY(-3px) !important;
+}
+
+.whatsapp-fixed:hover {
+  background: #25D366 !important;
+  color: white !important;
+}
+
+.instagram-fixed:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  color: white !important;
+}
+
+.email-fixed:hover {
+  background: #EA4335 !important;
+  color: white !important;
+}
+
+/* GOOGLE MAPS */
+.map-wrapper-fixed {
+  margin-bottom: 15px !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.google-map-fixed {
+  width: 100% !important;
+  height: 200px !important;
+  border: none !important;
+  display: block !important;
+}
+
+.map-link-fixed {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #d4a574 !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.map-link-fixed:hover {
+  color: #ecf0f1 !important;
+}
+
+.map-link-fixed i {
+  font-size: 16px !important;
+}
+
+/* COPYRIGHT BAR */
+.copyright-bar-fixed {
+  background: #1a252f !important;
+  padding: 20px 0 !important;
+  margin-top: 50px !important;
+}
+
+.copyright-text-fixed {
+  color: #95a5a6 !important;
+  font-size: 13px !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  footer.footer-wrapper-fixed {
+    padding: 40px 0 0 !important;
+  }
+
+  .footer-col-fixed {
+    margin-bottom: 35px !important;
+  }
+
+  .footer-col-fixed:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .copyright-bar-fixed {
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  footer.footer-wrapper-fixed {
+    padding: 30px 0 0 !important;
+  }
+
+  .footer-title-fixed {
+    font-size: 16px !important;
+  }
+
+  .contact-list-fixed li,
+  .location-list-fixed li,
+  .quick-links-fixed a {
+    font-size: 13px !important;
+  }
+
+  .google-map-fixed {
+    height: 180px !important;
+  }
+
+  .copyright-text-fixed {
+    font-size: 12px !important;
+  }
+
+  .copyright-bar-fixed {
+    margin-top: 20px !important;
+    padding: 15px 0 !important;
+  }
+}
+</style>
 
 </section>
 
  <!--Bootstrap JS CDN Link-->
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<!-- Swiper Js CDN Link-->
+<!-Swiper Js CDN Link-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Custom JS Link-->
+
 <script src="Js/main.js"></script>
 
 </body>
-</html>
+</html>- 

@@ -7,19 +7,10 @@ use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
-   public function index(Request $request)
+ public function index()
 {
-    $search = $request->search;
-
-    $reservations = Reservation::when($search, function($query) use ($search) {
-        $query->where('guest_name', 'like', "%{$search}%")
-              ->orWhere('phone', 'like', "%{$search}%")
-              ->orWhere('room_type', 'like', "%{$search}%");
-    })
-    ->orderBy('created_at', 'desc')
-    ->get();
-
-    return view('reservations.index', compact('reservations', 'search'));
+    $reservations = Reservation::orderBy('created_at', 'desc')->get();
+    return view('reservations.index', compact('reservations'));
 }
 
 
@@ -34,17 +25,16 @@ class ReservationController extends Controller
         return view('booking', compact('prices'));
     }
 
-    public function store(ReservationRequest $request)
-    {
-        $data = $request->validated();
-        Reservation::create($data);
-        return redirect()->route('reservations.index')->with('success','Reservasi dibuat.');
-    }
+   public function store(ReservationRequest $request)
+{
+    $data = $request->validated();
 
-    public function show(Reservation $reservation)
-    {
-        return view('reservations.show', compact('reservation'));
-    }
+    Reservation::create($data);
+
+    return redirect()->route('reservations.index')
+                     ->with('success', 'Reservasi dibuat.');
+}
+
 
     public function edit(Reservation $reservation)
     {

@@ -9,12 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-   public function up(): void
+public function up(): void
 {
     Schema::create('reservations', function (Blueprint $table) {
         $table->id();
         $table->string('guest_name');
         $table->string('phone');
+        $table->string('email');
         $table->date('check_in');
         $table->date('check_out');
         $table->string('room_type')->nullable();
@@ -25,6 +26,8 @@ return new class extends Migration
         $table->timestamps();
     });
 }
+
+
 
     /**
      * Reverse the migrations.

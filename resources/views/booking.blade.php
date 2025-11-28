@@ -1,33 +1,19 @@
 @extends('layouts.app')
 @section('title','Booking')
 @section('content')
+
+ <!-- Css Custom File Link-->
+    <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/responsive-style.css') }}">
+
+
+
 <div class="booking-container mx-auto" style="max-width:650px">
   <h3 class="text-center mb-4">Booking Kamar</h3>
-  <form method="POST" action="{{ route('reservations.store') }}">
-<style>
-    body { background: #f8f9fa; }
-        .booking-container {
-            max-width: 650px;
-            margin: 60px auto;
-            padding: 25px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-        }
-        .main-btn {
-            background-color: #c59d5f;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            color: white;
-            font-weight: 600;
-            transition: 0.2s;
-            width: 100%;
-        }
-        .main-btn:hover { background-color: #a8854d; }
-</style>
 
+  <form method="POST" action="{{ route('reservations.store') }}">
     @csrf
+    
     <div class="mb-3">
       <label>Nama Lengkap</label>
       <input type="text" name="guest_name" class="form-control" value="{{ old('guest_name') }}" required>
@@ -36,6 +22,12 @@
       <label>Nomor HP</label>
       <input type="text" name="phone" class="form-control" value="{{ old('phone') }}" required>
     </div>
+
+ <div class="mb-3">
+      <label>email</label>
+      <input type="text" name="email" class="form-control" value="{{ old('email') }}" required>
+    </div>
+
     <div class="row">
       <div class="col mb-3">
         <label>Check-in</label>

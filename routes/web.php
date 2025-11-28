@@ -11,7 +11,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::view('/rooms', 'rooms');
+Route::view('/foods', 'foods');
+Route::view('/facility', 'facility');
+
+
+
 
 Route::get('/', function () {
     return view('dashboard');
 });
+

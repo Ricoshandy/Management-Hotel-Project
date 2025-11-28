@@ -24,6 +24,7 @@ class ReservationRequest extends FormRequest
         return [
         'guest_name' => 'required|string|max:255',
         'phone' => 'required|string|max:30',
+        'email' => 'required|string|max:30',
         'check_in' => 'required|date|after_or_equal:today',
         'check_out' => 'required|date|after:check_in',
         'room_type' => 'nullable|string|max:100',

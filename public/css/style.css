@@ -28,8 +28,14 @@
 }
 
 body{
-    font-family: var(--primary-font);
-    background-color: var(--bg-white);
+    margin: 0;
+    padding: 0;
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   /* MAGIC NYA DI SINI */
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
 }
 a
 {
@@ -234,9 +240,8 @@ font-weight: 500;
 }
 
 /* About Css */
-.about-wrapper{
-    padding-top: 9.375rem;
-}
+
+
 
 /* 5 Rooms */
 .rooms_wrapper .room-items{
@@ -830,4 +835,97 @@ color: var(--text-white);
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+
+
+
+/* ABOUT CUSTOM SECTION – ANTI BOOTSTRAP */
+.about-section-custom * {
+    box-sizing: border-box;
+}
+
+/* Container padding */
+.about-section-custom {
+    padding-top: 6rem;
+}
+
+/* Title */
+.about-section-custom .about-title {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+.about-section-custom .about-title span {
+    color: var(--secondary-color);
+}
+
+/* Description */
+.about-section-custom .about-desc {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* Rules Box */
+.about-section-custom .islamic-box {
+    background: #f7f4ee;
+    border-left: 6px solid var(--secondary-color);
+    padding: 1.7rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.about-section-custom .rules-title {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.about-section-custom .rules-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section-custom .rules-list li {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.about-section-custom .rules-list strong {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+/* Footer */
+.about-section-custom .rules-footer {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Promise box */
+.about-section-custom .promise-box {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: var(--text-white);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.about-section-custom .promise-box h5 {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+.about-section-custom .about-image {
+    max-width: 450px;
 }

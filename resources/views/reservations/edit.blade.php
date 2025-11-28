@@ -23,6 +23,13 @@
                  value="{{ old('phone', $reservation->phone) }}" required>
       </div>
 
+    <div class="mb-3">
+    <label>Email</label>
+    <input type="email" class="form-control" name="email"
+           value="{{ old('email', $reservation->email) }}" required>
+    </div>
+
+
       <div class="row">
           <div class="col mb-3">
               <label>Check-in</label>
