@@ -155,7 +155,7 @@
       <!-- IMAGE -->
       <div class="col-lg-6 about-image-col">
         <div class="about-image-wrapper">
-          <img src="{{ asset('Images/about-img.svg') }}" class="about-main-image" alt="about">
+          <img src="{{ asset('Images/aboute.jpg') }}" class="about-main-image" alt="about">
         </div>
       </div>
     </div>
