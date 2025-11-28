@@ -18,9 +18,9 @@ class ReservationController extends Controller
     {
         // optional pass room price list
         $prices = [
-            'Luxury Suite' => 300000,
-            'Deluxe Room' => 200000,
-            'Standard Room' => 100000,
+             'Luxury Suite'  => 5000000,
+             'Deluxe Room'   => 3000000,
+             'Standard Room' => 1500000,
         ];
         return view('booking', compact('prices'));
     }
@@ -39,9 +39,9 @@ class ReservationController extends Controller
     public function edit(Reservation $reservation)
     {
         $prices = [
-            'Luxury Suite' => 300000,
-            'Deluxe Room' => 200000,
-            'Standard Room' => 100000,
+             'Luxury Suite'  => 5000000,
+           'Deluxe Room'   => 3000000,
+             'Standard Room' => 1500000,
         ];
         return view('reservations.edit', compact('reservation','prices'));
     }

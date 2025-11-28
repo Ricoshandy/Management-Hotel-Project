@@ -6,7 +6,7 @@
     <title>Al-Meghah Hotel</title>
     
     <!-- Favicon Image-->
-   <link rel="icon" href="Images/1.png" type="image/x-icon">
+   <link rel="icon" href="Images/AL.png" type="image/x-icon">
 
     <!-- Bootstrap5 Cdn Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -31,7 +31,14 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/dashboard') }}">
-               <img src="Images/2.png" class="img-fluid" alt="" style="max-width: 160px; height: auto;">
+           <a class="navbar-brand" href="#" style="display:flex; align-items:center;">
+  <img 
+    src="Images/AL.png" 
+    alt="logo" 
+    style="height:70px; width:auto; object-fit:contain; margin:0; padding:0; display:block;"
+  >
+</a>
+
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars-staggered"></i> 
@@ -44,7 +51,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="dashboard#about">About</a>
                     </li>
 
                     <li class="nav-item">
@@ -97,7 +104,7 @@
     @yield('content')
   </div>
 
-<<!-- Footer Section-->
+<!-- Footer Section-->
 <footer id="contact" class="footer-wrapper-fixed">
   <div class="container">
     <div class="row footer-row-fixed">
@@ -166,7 +173,7 @@
             </a>
           </li>
           <li>
-            <a href="mailto:alfizuhriyah.2022@mhs.unisda.ac.id" class="social-link-fixed email-fixed">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCGldJcjNjrmBbXnWQVQFgTmXskZGJMbSJBLPFwxqTDVMSPdddsRLDZhflgwQHBsHZBXVV " class="social-link-fixed email-fixed">
               <i class="fab fa-google"></i>
             </a>
           </li>

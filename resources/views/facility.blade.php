@@ -1,14 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.navbar')
 
 @section('content')
-<section class="portfolio section" style="padding-top: 120px">
 
     <div class="container">
-        <h2 class="section-title fade-in text-center" style="font-family: Georgia, 'Times New Roman', Times, serif">🏨 Hotel Facilities 🏨 </h2>
+        <h2 class="section-title fade-in text-center" style="font-family:'Times New Roman', Times, serif; font-weight: bold; font-size: 45px;"> Al-Meghah Facilities  <br>
+            (Islamic Luxury Hospitality)</h2>
         <p class="text-center mb-5" style="max-width: 600px; margin: auto; color: #555;">
-           We provide a variety of modern amenities to ensure the comfort and best experience for every guest.
+          We provide a variety of modern amenities to ensure the comfort and best experience for every guest.
         </p>
-
         <div class="portfolio-grid">
 
             <!-- Hotel Iconic Facilities — Experience Beyond Hospitality -->
@@ -125,17 +124,22 @@
 
 <div class="portfolio-item fade-in">
     <div class="portfolio-image">
-        <img src="{{ asset('Images/Kamar hotel tingkat 1/IMG-20251122-WA0095.jpg') }}" alt="Jeep Shuttle Station">
+        <img src="{{ asset('Images/Fasilitas hotel/Dinning room.jpg') }}" alt="Dinning room">
     </div>
     <div class="portfolio-content">
-        <h3 class="portfolio-title">Super bedding</h3>
+        <h3 class="portfolio-title">Restaurant Floors</h3>
         <p class="portfolio-description">
-        Panoramic full-wall window 75” TV & smart mirror Private mini cinema corner Reading nook & executive work desk In-room lounge sofa
-
-
+            Restaurant spaces located on floors 3, 7, 12, and 16, each with mountain-view dining,
+            a dedicated service corner, and refined culinary experiences for all guests.
         </p>
     </div>
 </div>
 
+
+           
 </section>
-@endsection
+     
+  @endsection
+      
+                
+

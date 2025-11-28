@@ -32,7 +32,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 section-title text-center mb-5">
-        <h6>What I can do for you</h6>
+       
         <h3>🥩 Premium Meat Specialties & Signature Indonesian Dishes ⭐</h3>
       </div>
     </div>
@@ -162,7 +162,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 section-title text-center mb-5">
-        <h6>What I can do for you</h6>
+      
         <h3>🍰 Luxury Dessert Collectiont & 🌎 International Favorites</h3>
       </div>
     </div>
